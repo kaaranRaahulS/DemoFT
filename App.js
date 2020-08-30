@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   SafeAreaView,
   StyleSheet,
@@ -15,10 +16,13 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Navigation from './navigation/Navigation';
 
 const App = () => {
   return (
-    <Text>HELLO</Text>
+    <NavigationContainer>
+      <Navigation></Navigation>
+    </NavigationContainer>
   );
 };
 

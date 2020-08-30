@@ -21,7 +21,7 @@ const MaterialBottomTab = createMaterialBottomTabNavigator();
 
 // var isSignedIn = false;
 
-const Authentication = () => (
+const Authentication = ({ navigation }) => (
     // isSignedIn ? (
         // <NavigationContainer>
         //     <Tab.Navigator>
@@ -31,7 +31,6 @@ const Authentication = () => (
         // </NavigationContainer>
 
     // ) : (
-            <NavigationContainer>
                 <Stack.Navigator headerMode="none">
                     <Stack.Screen name="SplashScreen" component={SplashScreen} />
                     <Stack.Screen name="Login" component={Login}/>
@@ -41,7 +40,6 @@ const Authentication = () => (
                     <Stack.Screen name="ChooseCourse" component={ChooseCourse}/>
                     <Stack.Screen name="ForgotPassword" component={ForgotPassword}/>
                 </Stack.Navigator>
-             </NavigationContainer>
 
         // )
 )
